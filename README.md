@@ -26,7 +26,9 @@ Example containers with open source codes:
 
 All of the tools are in containers as well 
 
-***Logging management: Stack fulfills a need in the log analytics space.***
+***Logging management:*** 
+Stack of devops tools fulfills a need in the log analytics space.
+
 - EFK [(Elasticseach,Fluentd,Kipana)](https://docs.fluentd.org/v0.12/articles/docker-logging-efk-compose) with integration demo to httpd server. 
 
 - ELK [(Elasticseach,Logstash,Kipana)](https://logz.io/learn/complete-guide-elk-stack/) with syslog demo integration via logspout collector. [Syslog conf description:](https://jujucharms.com/u/lazypower/logspout/)
