@@ -108,8 +108,10 @@ Stack of devops tools fulfills a need in the log analytics space.
 `sudo docker-compose -f docker-compose-elk.yml down`
 
 ***Rebuild***
-In case you have made changes in local Dockerfile or content then rebuild the bundle.
+
+In case you have made changes for local Dockerfile or itself content then rebuild the bundle.
 (Changes in docker-compose yml file does not require rebuilding, only restart is needed)
+Also there are some conf files mounted to host folders. In order to changes into use only container restart is needed. 
 
 `sudo docker-compose -f <docker-compose file> build`
   
