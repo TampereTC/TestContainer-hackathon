@@ -56,9 +56,13 @@ Stack of devops tools fulfills a need in the log analytics space.
 ***Jenkins in docker:***
 - The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
 
+
+
 **Instruction:**
 - clone this project as zip file and extract it or use git clone command
 - extract the "hackstack.zip" file in $HOME folder
+
+
 
 ***Portainer dashboard:***
 - login to your home folder
