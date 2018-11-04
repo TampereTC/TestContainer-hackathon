@@ -16,6 +16,7 @@ For Win10 & Linux users:
 For Win7 users: 
 
 Virtualbox is one option and reference VM clone image for Hackathon is based on it.
+Please reserve at least 30GB free disk space.
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 
