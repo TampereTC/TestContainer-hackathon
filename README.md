@@ -5,12 +5,16 @@ TestContainer reference tools and examples are designed as kind of reference mat
 
 *Requirements:*
 
-Windows10 or linux users could easily setup hackathon environment by using github material as such. For Win7 users only. Docker is not supported in your OS. However therefore hackathon setup can be delivered via dedicated VM clone image. Due to large size of VM material only docker-compose will be shared via github. VM will be shared separately at the beginning of the session and it contains whole set of required containers in one package:
+Windows10 or linux users could easily setup hackathon environment by using github material as such. For Win7 users only. Docker is not supported in your OS. However therefore hackathon setup can be delivered via dedicated VM clone image. Due to large size of VM material only docker-compose will be shared via github. VM will be shared separately at the beginning of the session and it contains whole set of required docker tools etc and containers in one package:
 
-- [docker](https://docs.docker.com/docker-for-windows/install/)
+For Win10 & Linux users:
+
+- [docker windows](https://docs.docker.com/docker-for-windows/install/)
+- [docker ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
-For Win7 users only. Docker is not supported in your OS. Via VM it works!!
+For Win7 users: 
+
 Virtualbox is one option and reference VM clone image for Hackathon is based on it.
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
