@@ -18,8 +18,6 @@ For Win7 users:
 Virtualbox is one option and reference VM clone image for Hackathon is based on it.
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
-Ready made VM-clone image will be available.
-
 
 
 **Demo apps:**
