@@ -13,6 +13,8 @@ For Win7 users. )
 
 Ready made VM-clone image will be available.
 
+
+
 **Demo apps:**
 
 Example containers with open source codes: 
@@ -20,6 +22,8 @@ Example containers with open source codes:
 - python-docker-sample-webapp: python web app demo
 - spring-boot-sample: spring boot web app demo
 - go-sample: go-lang web app demo   
+
+
 
 
 **Tools**
@@ -36,6 +40,8 @@ Stack of devops tools fulfills a need in the log analytics space.
 
 ***Container dashboard:***
 - [Portainer](https://portainer.readthedocs.io/en/stable/), web UI that allows you to easily manage your Docker containers, images, networks and volumes. Dashboard UI in your sandbox setup. http://localhost:9000
+
+
 
 
 **Test Frameworks:**
@@ -89,8 +95,12 @@ In case you have made changes in local Dockerfile or content then rebuild the bu
 (Changes in docker-compose yml file does not require rebuilding)
 sudo docker-compose -f <docker-compose file> build
   
+  
+  
 **Kubernetes configuration:**
 - It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however confuguring volume mounting seems to be a bit complicated and requires extra work to do. Roughly 70% of containers were succesfully converted.
+
+
 
 **Good to know:**
 - Note that each of the compose files contains instructions.
