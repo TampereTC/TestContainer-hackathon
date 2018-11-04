@@ -46,6 +46,8 @@ Stack of devops tools fulfills a need in the log analytics space.
 
 - ELK [(Elasticseach,Logstash,Kipana)](https://logz.io/learn/complete-guide-elk-stack/) with syslog demo integration via logspout collector. [Syslog conf description:](https://jujucharms.com/u/lazypower/logspout/)
 
+FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog/fluentd-logstash/)
+
 ***Container dashboard:***
 - [Portainer](https://portainer.readthedocs.io/en/stable/), web UI that allows you to easily manage your Docker containers, images, networks and volumes. Dashboard UI in your sandbox setup. http://localhost:9000
 
