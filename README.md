@@ -8,7 +8,7 @@ Due to large size of VM material only docker-compose will be shared via github. 
 - [docker](https://docs.docker.com/glossary/?term=installation)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
-For Win7 users. )
+For Win7 users. Docker is not supported in your OS. Via VM it's works.
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 Ready made VM-clone image will be available.
