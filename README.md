@@ -60,35 +60,51 @@ Stack of devops tools fulfills a need in the log analytics space.
 - extract the "hackstack.zip" file in $HOME folder
 
 ***Portainer dashboard:***
-- login to your home folder by cmd
+- login to your home folder
 - start up command:
+
 `cd hackstack`
+
 `sudo docker-compose -f docker-compose-portainer.yml up -d`
+
 - shutdown command:
+
 `sudo docker-compose -f docker-compose-portainer.yml down`
 
 ***Demo applications bundle with test frameworks without logging features:***
-- login to your home folder by cmd
+- login to your home folder
 - start up command:
+
 `cd hackstack`
+
 `sudo docker-compose up -d`
+
 - shutdown command:
+
 `sudo docker-compose down`
 
 ***Demo applications bundle with test frameworks with EFK logging features:***
-- login to your home folder by cmd
+- login to your home folder
 - start up command:
+
 `cd hackstack`
+
 `sudo docker-compose -f docker-compose-efk.yml up -d`
+
 - shutdown command:
+
 `sudo docker-compose -f docker-compose-efk.yml down`
 
 ***Demo applications bundle with test frameworks with ELK logging features:***
-- login to your home folder by cmd
+- login to your home folder
 - start up command:
+
 `cd hackstack`
+
 `sudo docker-compose -f docker-compose-elk.yml up -d`
+
 - shutdown command:
+
 `sudo docker-compose -f docker-compose-elk.yml down`
 
 In case you have made changes in local Dockerfile or content then rebuild the bundle.
