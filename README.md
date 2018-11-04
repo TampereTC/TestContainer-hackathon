@@ -14,7 +14,7 @@ For Win7 users. )
 Ready made VM-clone image will be available.
 
 Example containers with open source codes: 
-- nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express] (https://expressjs.com/) 
+- nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express](https://expressjs.com/) 
 - python-docker-sample-webapp: python web app demo
 - spring-boot-sample: spring boot web app demo
 - go-sample: go-lang web app demo   
@@ -22,14 +22,13 @@ Example containers with open source codes:
 Tools all in containers: 
 
 Logging management: Stack fulfills a need in the log analytics space.
-- EFK (Elasticseach,Fluentd,Kipana) with integration demo to httpd server. 
-https://docs.fluentd.org/v0.12/articles/docker-logging-efk-compose
-- ELK (Elasticseach,Logstash,Kipana) with syslog demo integration via logspout collector
- https://logz.io/learn/complete-guide-elk-stack/. Syslog conf description: https://jujucharms.com/u/lazypower/logspout/
+- EFK [(Elasticseach,Fluentd,Kipana)](https://docs.fluentd.org/v0.12/articles/docker-logging-efk-compose) with integration demo to httpd server. 
+
+- ELK [(Elasticseach,Logstash,Kipana)](https://logz.io/learn/complete-guide-elk-stack/) with syslog demo integration via logspout collector. [Syslog conf description:](https://jujucharms.com/u/lazypower/logspout/)
 
 Container management:
-- Portainer, web UI that allows you to easily manage your Docker containers, images, networks and volumes > http://localhost:9000
-https://portainer.readthedocs.io/en/stable/
+- [Portainer](https://portainer.readthedocs.io/en/stable/), web UI that allows you to easily manage your Docker containers, images, networks and volumes. Dashboard UI in your sandbox setup. http://localhost:9000
+
 
 
 Test Frameworks:
@@ -46,6 +45,7 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 Instruction:
 - clone this project as zip file and extract it or use git clone command
 - extract the "hackstack.zip" file in $HOME folder
+
 
 
 
