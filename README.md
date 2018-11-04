@@ -8,7 +8,8 @@ Due to large size of VM material only docker-compose will be shared via github. 
 - [docker](https://docs.docker.com/docker-for-windows/install/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
-For Win7 users. Docker is not supported in your OS. Via VM it's works.
+For Win7 users only. Docker is not supported in your OS. Via VM it works.
+Virtualbox is one option and reference VM clone image for Hackathon is based on it.
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 Ready made VM-clone image will be available.
