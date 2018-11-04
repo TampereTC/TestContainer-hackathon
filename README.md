@@ -2,7 +2,7 @@
 Hackathon reference tools, examples and setup instructions
 
 TestContainer reference tools and examples are designed as kind of reference material. Setup is based on several docker-compose bundles. Providing large set of well known devops test tools with ready made integrations to demo data sources.
-Due to large size of VM material only docker-compose will be shared via github. VM will be share at the beginning of the session:
+Due to large size of VM material only docker-compose will be shared via github. VM will be shared separately at the beginning of the session:
 
 Requirements:
 - [docker](https://docs.docker.com/glossary/?term=installation)
@@ -10,6 +10,7 @@ Requirements:
 
 For Win7 users. )
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+
 Ready made VM-clone image will be available.
 
 Example containers with open source codes: 
@@ -33,11 +34,11 @@ https://portainer.readthedocs.io/en/stable/
 
 Test Frameworks:
 
-Robot framework with Selenium:
+- Robot framework with Selenium:
 Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
 
 TestCafe (Firefox edition):
-A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image
+A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. [Demo]( http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image)
 
 Jenkins:
 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
