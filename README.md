@@ -27,6 +27,7 @@ Example containers with open source codes:
 All of the tools are in containers as well 
 
 ***Logging management:*** 
+
 Stack of devops tools fulfills a need in the log analytics space.
 
 - EFK [(Elasticseach,Fluentd,Kipana)](https://docs.fluentd.org/v0.12/articles/docker-logging-efk-compose) with integration demo to httpd server. 
@@ -37,15 +38,15 @@ Stack of devops tools fulfills a need in the log analytics space.
 - [Portainer](https://portainer.readthedocs.io/en/stable/), web UI that allows you to easily manage your Docker containers, images, networks and volumes. Dashboard UI in your sandbox setup. http://localhost:9000
 
 
-***Test Frameworks:***
+**Test Frameworks:**
 
-****Robot framework with Selenium:****
+***Robot framework with Selenium:***
 - Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
 
-****TestCafe (Firefox edition):****
+***TestCafe (Firefox edition):***
 - A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. [Demo]( http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image)
 
-****Jenkins in docker:****
+***Jenkins in docker:***
 - The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
 
 **Instruction:**
