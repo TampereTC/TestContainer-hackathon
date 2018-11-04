@@ -79,6 +79,9 @@ sudo docker-compose -f docker-compose-elk.yml down
 In case you have made changes in local Dockerfile or content then rebuild the bundle.
 (Changes in docker-compose yml file does not require rebuilding)
 sudo docker-compose -f <docker-compose file> build
+  
+Kubernetes configuration:
+- It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however confuguring volume mounting seems to be a bit complicated and requires extra work to do. Roughly 70% of containers were succesfully converted.
 
 Good to know:
 - Note that each of the compose files contains instructions.
