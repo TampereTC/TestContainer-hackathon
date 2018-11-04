@@ -30,24 +30,58 @@ Container management:
 - [Portainer](https://portainer.readthedocs.io/en/stable/), web UI that allows you to easily manage your Docker containers, images, networks and volumes. Dashboard UI in your sandbox setup. http://localhost:9000
 
 
-
 Test Frameworks:
-
 - Robot framework with Selenium:
 Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
 
 TestCafe (Firefox edition):
 A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. [Demo]( http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image)
 
-Jenkins:
+Jenkins in docker:
 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
 
 Instruction:
 - clone this project as zip file and extract it or use git clone command
 - extract the "hackstack.zip" file in $HOME folder
 
+Start Portainer dashboard:
+- login to your home folder by cmd
+- start up command:
+cd hackstack
+sudo docker-compose -f docker-compose-portainer.yml up -d
+- shutdown command:
+sudo docker-compose -f docker-compose-portainer.yml down
 
+Start demo applications bundle with test frameworks without logging features:
+- login to your home folder by cmd
+- start up command:
+cd hackstack
+sudo docker-compose up -d
+- shutdown command:
+sudo docker-compose down
 
+Start demo applications bundle with test frameworks with EFK logging features:
+- login to your home folder by cmd
+- start up command:
+cd hackstack
+sudo docker-compose -f docker-compose-efk.yml up -d
+- shutdown command:
+sudo docker-compose -f docker-compose-efk.yml down
 
+Start demo applications bundle with test frameworks with ELK logging features:
+- login to your home folder by cmd
+- start up command:
+cd hackstack
+sudo docker-compose -f docker-compose-elk.yml up -d
+- shutdown command:
+sudo docker-compose -f docker-compose-elk.yml down
 
+In case you have made changes in local Dockerfile or content then rebuild the bundle.
+(Changes in docker-compose yml file does not require rebuilding)
+sudo docker-compose -f <docker-compose file> build
 
+Good to know:
+- Note that each of the compose files contains instructions.
+- Some of the containers are mounted to your host. 
+volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder 
+- Reserve enough memory (4GB) and cpu cores (3-4) to your VM setup
