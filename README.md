@@ -5,15 +5,15 @@ TestContainer reference tools and examples are designed as kind of reference mat
 Due to large size of VM material only docker-compose will be shared via github. VM will be share at the beginning of the session:
 
 Requirements:
-- Docker
-- Docker-compose
+- [docker](https://docs.docker.com/glossary/?term=installation)
+- [docker-compose](https://docs.docker.com/compose/install/)
 
-For Win7 users. 
-- Virtualbox
+For Win7 users. )
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 Ready made VM-clone image will be available.
 
 Example containers with open source codes: 
-- nodejs-docker-sample-webapp: nodejs web app demo, based on nodejs express https://expressjs.com/ 
+- nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express] (https://expressjs.com/) 
 - python-docker-sample-webapp: python web app demo
 - spring-boot-sample: spring boot web app demo
 - go-sample: go-lang web app demo   
