@@ -64,8 +64,15 @@ Stack of devops tools fulfills a need in the log analytics space.
 
 **Instruction:**
 - clone this project as zip file and extract it or use git clone command
-- extract the "hackstack.zip" file in $HOME folder
+- extract the 'hackstack*' files in $HOME folder
 
+***Unzip the files***
+
+Due to large size, the zip files has split to 6 parts. Here the linux command to unzip the file.
+
+`zip -s 0 hackstack.zip --out unhackstack.zip`
+
+`unzip unhackstack.zip`
 
 
 ***Portainer dashboard:***
