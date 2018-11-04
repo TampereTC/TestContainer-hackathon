@@ -98,7 +98,7 @@ sudo docker-compose -f <docker-compose file> build
   
   
 **Kubernetes configuration:**
-- It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however confuguring volume mounting seems to be a bit complicated and requires extra work to do. Roughly 70% of containers were succesfully converted.
+- It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however configuring volume mounting seems to be a bit tricky and requires extra work to do. However roughly 70% of containers were succesfully converted to Kubernetes PODs yaml format.
 
 
 
