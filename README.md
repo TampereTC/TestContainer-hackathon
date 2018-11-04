@@ -4,7 +4,7 @@ Hackathon reference tools, examples and setup instructions
 TestContainer reference tools and examples are designed as kind of reference material. Setup is based on several docker-compose bundles. Providing large set of well known devops test tools with ready made integrations to demo data sources.
 Due to large size of VM material only docker-compose will be shared via github. VM will be shared separately at the beginning of the session:
 
-**Requirements:**
+*Requirements:*
 - [docker](https://docs.docker.com/glossary/?term=installation)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
