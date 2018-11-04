@@ -5,7 +5,7 @@ TestContainer reference tools and examples are designed as kind of reference mat
 Due to large size of VM material only docker-compose will be shared via github. VM will be shared separately at the beginning of the session:
 
 *Requirements:*
-- [docker](https://docs.docker.com/glossary/?term=installation)
+- [docker](https://docs.docker.com/docker-for-windows/install/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
 For Win7 users. Docker is not supported in your OS. Via VM it's works.
