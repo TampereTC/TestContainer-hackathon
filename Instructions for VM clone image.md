@@ -14,4 +14,4 @@ Other side of the coin:
 
 
 
-![VSL Solution](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/WSL-architecture.png)
+![VSL Solution](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/Picture1.png)
