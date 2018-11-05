@@ -13,6 +13,8 @@ For Win10 & Linux users:
 - [docker ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
+[Installation instructions (Win10+Hyper-V+WSL+Docker):](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Instructions-WSL-Docker-HyperV.md) 
+
 For Win7 users: 
 
 Virtualbox is one option and reference VM clone image for Hackathon is based on it.
