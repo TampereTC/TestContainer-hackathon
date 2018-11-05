@@ -9,13 +9,12 @@ Why: Natively docker configuration is based on linux file system. On otherhand H
 
 2)	Install Ubuntu Shell from Microsoft store
 
-3)	Install Docker for Windows
-https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+3)	Install Docker for Windows. [Download link](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 4)	Expose the Docker daemon (start Docker or set to “Start Docker automatically when you login into your PC)
 
 5)	Launch WSL (Type Ubuntu on win search box)
 
-$ sudo apt-get update
+$ `sudo apt-get update`
 $ sudo apt-get -y upgrade
 $ sudo apt-get install -y git docker docker-compose
 $ git config --global http.proxy http://10.144.1.10:8080
