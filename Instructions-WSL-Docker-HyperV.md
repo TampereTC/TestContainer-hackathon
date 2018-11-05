@@ -21,13 +21,27 @@ Enable Hyper-V and WSL (Windows Subsystem for Linux)
 
 ![Winfeatures](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/win-feat-on2.png)
 
-## Install Ubuntu Shell from Microsoft store
+## Install Ubuntu Shell via Microsoft store
+
+![Store](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/store.png)
 
 ## Install Docker for Windows. 
 
 [Download link](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 
+## Configure Docker: 
+
 Expose the Docker daemon (start Docker or set to “Start Docker automatically when you login into your PC)
+
+![expose](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/docker-win.png)
+
+Add Shared folders from host to docker VM
+
+![Volumes](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/Volumes.PNG)
+
+Reserve at least 4GB RAM and 3-4 CPU cores
+
+![CPU]https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/CPU-mem.PNG)
 
 ## Install Docker CLI and Docker-Compose for WSL 
 
