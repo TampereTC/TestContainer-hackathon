@@ -157,7 +157,7 @@ volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder
   
 ## Container bundles
 
-- Each of the docker-compose yml files contains details behind of configurations and links to further info sources.
+- Each of the docker-compose yml files contains descriptions of containers and links to additional info sources.
 - Demo applications are desined so that source codes are available in hackstack folder. Dockerfile compiles the project.
 - Following diagram discribes how each of the container bundles are related to yaml bundles and how they are integrated.
 
