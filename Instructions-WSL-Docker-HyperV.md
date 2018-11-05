@@ -5,7 +5,9 @@ Instructions how to install Docker for Windows and integrating the same to “Ba
 Why: Natively docker configuration is based on linux file system. On otherhand Hyper-V natively integrated as part of Windows10 OS.
   
 
-## Prepare Windows10 settings: Enable Hyper-V and WSL (Windows Subsystem for Linux) 
+## Configure Windows 10 system settings: 
+
+Enable Hyper-V and WSL (Windows Subsystem for Linux) 
 
 ## Install Ubuntu Shell from Microsoft store
 
@@ -15,7 +17,7 @@ Why: Natively docker configuration is based on linux file system. On otherhand H
 
 Expose the Docker daemon (start Docker or set to “Start Docker automatically when you login into your PC)
 
-## Install Docker CLI and Docker-Compose WSL 
+## Install Docker CLI and Docker-Compose for WSL 
 
 Launch WSL (Type Ubuntu on win search box)
 
