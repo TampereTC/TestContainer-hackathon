@@ -19,7 +19,7 @@ Instructions are covering Virtualbox installation + VM clone image related setti
 ## Instructions:
 
 
-Requirements:
+**Requirements:**
 - 64 bits Virtualization (requires IT support to access bios) 
 - Virtualbox: [Download link](https://www.virtualbox.org/wiki/Downloads)
 - Disk space: Totally 50 GB disk space is needed in your targer file system
