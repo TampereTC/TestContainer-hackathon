@@ -163,4 +163,4 @@ volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder
 
 ![Container-bundle](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Container-bundle.png)
 
-**Happy hackathon :-)
+**Happy hackathon :-)**
