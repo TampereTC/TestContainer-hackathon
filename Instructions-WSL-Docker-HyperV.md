@@ -7,7 +7,7 @@ Why?
 - Hyper-V natively integrated as part of Windows10 OS. -> Ensure Optimal performance to run VMs
 - WSL is well integrated as past of Windows OS -> E.g less work with adaptations. E.g Win volume mounts by default in place
 
-![VSL Solution](
+![VSL Solution](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/WSL-architecture.png)
 
 ## Configure Windows 10 system settings: 
 
