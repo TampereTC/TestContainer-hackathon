@@ -1,10 +1,9 @@
-# HACKATHON Setup for WINDOWS 10/Hyper-v 
-with linux subsystem (WSL)
+# HACKATHON Setup for WINDOWS 10 with Hyper-V 
 
 Instructions how to install Docker for Windows and integrating the same to “Bash on Ubuntu on Windows”.
 
-Why: Natively docker configuration is based on linux file system. On otherhand Hyper-V natively integrated as part of Windows10 OS.
-  
+Why? Natively docker configuration is based on linux file system. 
+On otherhand Hyper-V natively integrated as part of Windows10 OS.  
 
 ## Configure Windows 10 system settings: 
 
