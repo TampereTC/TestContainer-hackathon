@@ -154,3 +154,13 @@ Also there are some conf files mounted to host folders. In order to changes into
 - Some of the containers are mounted to your host. 
 volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder 
 - Reserve enough memory (4GB) and cpu cores (3-4) to your VM setup
+  
+## Container bundles
+
+- Each of the docker-compose yml files contains details behind of configurations and links to further info sources.
+- Demo applications are desined so that source codes are available in hackstack folder. Dockerfile compiles the project.
+- Following diagram discribes how each of the container bundles are related to yaml bundles and how they are integrated.
+
+![Container-bundle](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Container-bundle.png)
+
+** Happy hackathon!!!
