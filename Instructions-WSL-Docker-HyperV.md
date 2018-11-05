@@ -1,4 +1,5 @@
-# HACKATHON Setup for WINDOWS 10/Hyper-v with WSL linux subsystem
+# HACKATHON Setup for WINDOWS 10/Hyper-v 
+with linux subsystem (WSL)
 
 Instructions how to install Docker for Windows and integrating the same to “Bash on Ubuntu on Windows”.
 
