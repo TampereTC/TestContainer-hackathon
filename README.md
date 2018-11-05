@@ -77,7 +77,7 @@ Due to large size, the zip files has split to 6 parts. Here the linux command to
 
 `zip -s 0 hackstack.zip --out unhackstack.zip`
 
-`unzip unhackstack.zip`
+$`unzip unhackstack.zip`
 
 
 ***Portainer dashboard:***
