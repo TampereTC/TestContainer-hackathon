@@ -13,6 +13,14 @@ Why WSL?
 
 Enable Hyper-V and WSL (Windows Subsystem for Linux) 
 
+- Control Panel\Programs -> Windows Features on / off
+
+![Winfeat on off](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/win-feat-on.png)
+
+- Select following features - On.
+
+![Winfeatures](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/win-feat-on2.png)
+
 ## Install Ubuntu Shell from Microsoft store
 
 ## Install Docker for Windows. 
