@@ -76,8 +76,9 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 
 **Unzip the files**
 
-Due to large size, the zip files has split to 6 parts. Here the linux command to unzip the file.
-Windows WinZip: Just douple-click hackstack.zip file to extract.
+Due to large size, the zip files has split to 6 parts.
+
+Windows: WinZip or 7-zip, Just douple-click hackstack.zip file to extract.
 
 Linux:
 
