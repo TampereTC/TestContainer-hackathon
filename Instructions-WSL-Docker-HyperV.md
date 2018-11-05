@@ -60,9 +60,7 @@ $`sudo usermod -aG docker $USER`
 
 Install Docker Compose.
 
-``sudo curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose &&``
-
-$`sudo chmod +x /usr/local/bin/docker-compose`
+$``sudo curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose``
 
 6)	You need to tell the Docker client (running in WSL) where the Docker host is (on Windows side), and you can do that by using the -H option as follows:
 
