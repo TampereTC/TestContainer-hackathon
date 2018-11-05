@@ -71,7 +71,7 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 
 ## Instruction:
 
-- clone this project as zip file and extract it or use git clone command
+- [clone](https://github.com/TampereTC/TestContainer-hackathon/archive/master.zip) this project as zip file and extract it or use git clone command
 - extract the 'hackstack*' files in $HOME folder
 
 **Unzip the files**
