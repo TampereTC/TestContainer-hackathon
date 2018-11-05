@@ -17,12 +17,11 @@ Windows10 or linux users could easily setup hackathon environment by using githu
 
 **For Win7 users (and Win10 users who are not willing to change Virtualbox to Hyper-V virtualization)**
 
-Virtualbox is one option and reference VM clone image for Hackathon is based on it.
+Virtualbox is one good option and reference VM clone image for Hackathon is based on it.
 
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
-
-Please reserve at least 30GB free disk space for hackathon VM installation.
+[Installation instructions (Win+Virtualbox+docker)](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Instructions%20for%20VM%20clone%20image.md)
 
 
 ## Demo apps:
