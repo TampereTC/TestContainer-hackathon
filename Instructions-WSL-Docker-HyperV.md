@@ -41,11 +41,11 @@ Add Shared folders from host to docker VM
 
 Reserve at least 4GB RAM and 3-4 CPU cores
 
-![CPU]https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/CPU-mem.PNG)
+![CPU](https://github.com/TampereTC/TestContainer-hackathon/blob/master/WSL/CPU-mem.PNG)
 
 ## Install Docker CLI and Docker-Compose for WSL 
 
-Launch WSL (Type Ubuntu on win search box)
+Launch WSL (Named as Ubuntu)
 
 Environment variables you need to set so you don't have to edit the script below.
 
