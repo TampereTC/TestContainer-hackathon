@@ -38,8 +38,8 @@ Attach VM image in Virtualbox
 - Start Virtualbox -> Click "New" icon
 - Attach VM as described below. Reserve 4GM RAM and at least 3 CPU cores.
 
-[AttachVM](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/VirtualBox%20link%20VM%20image.PNG)
-[CPU MEM](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/VM%20cpu.png)
+![AttachVM](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/VirtualBox%20link%20VM%20image.PNG)
+![CPU MEM](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/VM%20cpu.png)
 
 **Start "hackstack" VM in Virtualbox**
 
@@ -55,6 +55,6 @@ Attach VM image in Virtualbox
 
 Your setup should looks like follows:
 
-[Screenshot](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/Screenshot%20hackstack%20dashboard.png)
+![Screenshot](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/Screenshot%20hackstack%20dashboard.png)
 
 
