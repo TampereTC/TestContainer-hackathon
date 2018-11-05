@@ -1,8 +1,8 @@
-# HACKATHON Setup for WINDOWS 10 with Hyper-V 
+# HACKATHON Setup for WINDOWS 10: WSL + Docker
 
 Instructions how to install Docker for Windows and integrating the same to “Bash on Ubuntu on Windows”.
 
-Why? 
+Why WSL? 
 - Natively docker configuration is based on linux file system. -> Ensure linux compatibility to run docker commands on bash shell.
 - Hyper-V natively integrated as part of Windows10 OS. -> Ensure Optimal performance to run VMs
 - WSL is well integrated as past of Windows OS -> E.g less work with adaptations. E.g Win volume mounts by default in place
