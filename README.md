@@ -3,7 +3,7 @@ Hackathon reference tools, examples and setup instructions
 
 TestContainer reference tools and examples are designed as kind of reference material. Setup is based on several docker-compose bundles. Providing large set of well known devops test tools with ready made integrations to demo data sources. 
 
-# Requirements:
+## Requirements:
 
 Windows10 or linux users could easily setup hackathon environment by using github material as such. For Win7 users. Docker is not supported in your OS. However therefore hackathon environment can be setup via dedicated VM clone image. Due to large size of VM material only docker bundles are available via github. The hackathon VM will be distributed separately at the beginning of the event and it contains whole set of required docker tools and containers in one package:
 
@@ -23,7 +23,7 @@ Virtualbox is one option and reference VM clone image for Hackathon is based on 
 Please reserve at least 30GB free disk space for hackathon VM installation.
 
 
-# Demo apps:
+## Demo apps:
 
 Example containers with open source codes: 
 - nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express](https://expressjs.com/) 
@@ -34,7 +34,7 @@ Example containers with open source codes:
 
 
 
-# Tools:
+## Tools:
 
 All of the tools are in containers as well 
 
@@ -54,7 +54,7 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 
 
 
-# Test Frameworks:
+## Test Frameworks:
 
 **Robot framework with Selenium:**
 - Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
@@ -67,7 +67,7 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 
 
 
-# Instruction:
+## Instruction:
 - clone this project as zip file and extract it or use git clone command
 - extract the 'hackstack*' files in $HOME folder
 
@@ -138,12 +138,12 @@ Also there are some conf files mounted to host folders. In order to changes into
   
   
   
-# Kubernetes configuration:
+## Kubernetes configuration:
 - It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however configuring volume mounting seems to be a bit tricky and requires extra work to do. Roughly 70% of containers were succesfully converted to Kubernetes PODs yaml format.
 
 
 
-# Good to know:
+## Good to know:
 - Note that each of the compose files contains instructions.
 - Some of the containers are mounted to your host. 
 volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder 
