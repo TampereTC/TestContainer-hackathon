@@ -1,0 +1,43 @@
+HACKATHON Setup for WINDOWS 10/Hyper-v with WSL linux subsystem
+
+Instructions how to install Docker for Windows and integrating the same to “Bash on Ubuntu on Windows”.
+
+Why: Natively docker configuration is based on linux file system. On otherhand Hyper-V natively integrated as part of Windows10 OS.
+  
+
+1)	Prepare Windows10 settings: Enable Hyper-V and WSL (Windows Subsystem for Linux) 
+
+2)	Install Ubuntu Shell from Microsoft store
+
+3)	Install Docker for Windows
+https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+4)	Expose the Docker daemon (start Docker or set to “Start Docker automatically when you login into your PC)
+
+5)	Launch WSL (Type Ubuntu on win search box)
+
+$ sudo apt-get update
+$ sudo apt-get -y upgrade
+$ sudo apt-get install -y git docker docker-compose
+$ git config --global http.proxy http://10.144.1.10:8080
+
+6)	You need to tell the Docker client (running in WSL) where the Docker host is (on Windows side), and you can do that by using the -H option as follows:
+
+$ docker -H localhost:2375 images
+
+NOTE!
+If you don't want to type the host every time, you can set up and environment variable called DOCKER_HOST to localhost:2375
+
+$ export DOCKER_HOST=localhost:2375
+
+7)	Check that all looks ok
+$ docker info
+
+8) check the WSL mount to host system
+Your windows home is typically mounted under c or d drive. /mnt/c/Users/<user>
+Extract your hackathon material here /mnt/c/Users/<user>/hackstack
+$ cd /mnt/c/Users/<user>/hackstack
+
+9) Win10 WSL Subsystem is ready to follow further instruction. 
+Note that 'sudo' is not working with WSL docker. 
+Please run further commands without sudo.
+
