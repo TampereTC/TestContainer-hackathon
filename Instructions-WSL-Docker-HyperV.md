@@ -112,7 +112,7 @@ Extract your hackathon material here /mnt/c/Users/<user>/hackstack
 
 $`cd /mnt/c/Users/<user>/hackstack`
 
-Win10 WSL Subsystem is ready to follow further instruction. 
-Note that 'sudo' is not working with WSL docker. 
-Please run further commands without sudo.
+Win10 WSL Subsystem is ready to follow hackathon specific [instructions.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#instruction) 
+
+Note that 'sudo' is not working with WSL docker commands. 
 
