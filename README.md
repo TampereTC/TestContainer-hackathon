@@ -7,15 +7,15 @@ TestContainer reference tools and examples are designed as kind of reference mat
 
 Windows10 or linux users could easily setup hackathon environment by using github material as such. For Win7 users. Docker is not supported in your OS. However therefore hackathon environment can be setup via dedicated VM clone image. Due to large size of VM material only docker bundles are available via github. The hackathon VM will be distributed separately at the beginning of the event and it contains whole set of required docker tools and containers in one package:
 
-For Win10 & Linux users:
+**For Win10 & Linux users:**
 
-- [docker windows](https://docs.docker.com/docker-for-windows/install/)
+- [docker windows](https://docs.docker.com/docker-for-windows/)
 - [docker ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- [docker-compose](https://docs.docker.com/compose/install/)
+- [docker-compose](https://docs.docker.com/compose/)
 
 [Installation instructions (Win10+Hyper-V+WSL+Docker):](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Instructions-WSL-Docker-HyperV.md) 
 
-For Win7 users: 
+**For Win7 users (and Win10 users who are not willing to change Virtualbox to Hyper-V virtualization)**
 
 Virtualbox is one option and reference VM clone image for Hackathon is based on it.
 
