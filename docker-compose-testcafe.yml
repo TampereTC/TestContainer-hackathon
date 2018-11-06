@@ -1,0 +1,32 @@
+version: '3'
+# Please do not use <tab> when edit 
+
+services:
+
+# TestCafe (Firefox edition)
+# A Node.js tool to automate end-to-end web testing.
+# Write tests in JS or TypeScript, run them and view results. http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image.html
+# No examples included
+# TestCafe studio: https://testcafe-studio.devexpress.com/ Linux version downloaded to ./testcafe folder
+
+  test-cafe:
+    container_name: testcafe
+    image: testcafe/testcafe 
+    #build:
+    #  context: testcafe/docker
+    networks:
+      testcafe:
+        aliases: 
+         - testcafe 
+    volumes:
+       - ./testcafe/:/tests 
+    ports:
+      - "1337:1338"
+    entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "firefox", "./tests/examples/basic/"]
+    logging:
+      driver: "json-file"
+
+
+networks:
+  testcafe:
+    driver: bridge

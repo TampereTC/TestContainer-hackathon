@@ -1,0 +1,170 @@
+version: '3'
+# Please do not use <tab> when edit 
+
+# For Kubernetes users: Kubernetes + Compose = Kompose -> http://kompose.io/
+# This configuration is nearly compliant with kubernetes, still some volume mount problems is remaining
+# feel free to try 'sudo ./kompose -f docker-compose.yml convert'
+
+services:
+
+# Example containers with source codes
+
+# nodejs demo app, based on nodejs express https://expressjs.com/ 
+# mounted to local disk ./nodejs_app
+
+  nodejs-docker-sample-webapp: 
+    container_name: nodehello
+    image: "node:latest"
+    tty: true # Enables debugging capabilities when attached to this container.
+    # user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./nodejs_app:/home/node/app
+    ports:
+      - "3000:3000" # node express default webpage localhost:3000
+    command: sh -c "npm start "
+# logging guide https://docs.docker.com/compose/compose-file/compose-file-v2/#logging  
+    logging:
+      driver: "json-file"
+    networks:
+      hackstack:
+        aliases: 
+         - nodehello
+ 
+# python demo app
+# mounted to local disk ./python-docker-sample-webapp/webapp 
+  python-docker-sample-webapp:
+    container_name: pythonhello
+    build:
+      context: python-docker-sample-webapp/    
+    working_dir: /opt/webapp
+    volumes:
+      - ./python-docker-sample-webapp/webapp:/opt/webapp
+    ports:
+    - "5555:5000" # <exposed port>:<internal docker port>
+    logging:
+      driver: "json-file"
+    networks:
+      hackstack:
+        aliases: 
+         - pythonhello
+
+# spring boot demo app
+  spring-boot-sample:    
+    container_name: springhello
+    build:
+      context: spring-boot-demo/
+    #image: garystafford/hello-world:latest
+    ports:
+      - "8099:8080/tcp" # optional
+    command: "java \
+      -Dspring.profiles.active=dev \
+      -Djava.security.egd=file:/dev/./urandom \
+      -jar hello/hello-world.jar"
+    logging:
+       driver: json-file
+    networks:
+      hackstack:
+        aliases: 
+         - springhello
+
+# go demo app
+  go-sample: 
+    container_name: gohello
+    build:
+      context: go-docker-demo/
+    ports:
+     - "8077:8080/tcp" # optional
+    logging:
+      driver: json-file
+    networks:
+      hackstack:
+        aliases: 
+         - gohello
+
+
+# EFK (Elasticseach,Fluentd,Kipana) Stack fulfills a need in the log analytics space. 
+# https://docs.fluentd.org/v0.12/articles/docker-logging-efk-compose
+# Elasticsearch EFK database 
+  elasticsearch:
+    container_name: elasticsearch
+    image: elastic/elasticsearch:6.4.2
+    ports:
+      - "9200:9200" 
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    healthcheck: # Healtcheck example, guide https://docs.docker.com/compose/compose-file/compose-file-v2/#healthcheck
+        test: ["CMD-SHELL", "curl --silent --fail localhost:9200/_cluster/health || exit 1"]
+        interval: 30s
+        timeout: 30s
+    networks:
+      hackstack:
+        aliases:  
+        - elasticsearch
+    logging:
+      driver: "json-file"
+
+# Fluentd toolkit for managing logs to db, web app as an example
+
+  web:
+    container_name: web
+    image: httpd
+    ports:
+      - "8011:80"
+    links:
+      - fluentd
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: httpd.access
+    networks:
+      hackstack:
+        aliases: 
+          - web
+
+  fluentd:
+    container_name: fluentd
+    build: ./fluentd
+    volumes:
+      - ./fluentd/conf:/fluentd/etc
+    links:
+      - "elasticsearch"
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    networks:
+      hackstack:
+        aliases: 
+          - fluentd
+    depends_on:
+      - elasticsearch
+    logging:
+      driver: "json-file"
+
+    #restart: on-failure:10 
+ 
+
+  kibana: # EFK dashboard
+    container_name: kibana
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: "6.4.2"
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
+    ports:
+      - "5601:5601"
+    networks:
+      hackstack:
+        aliases: 
+          - kibana
+    depends_on:
+      - elasticsearch
+    logging:
+      driver: "json-file"
+
+
+networks:
+  hackstack:
+    driver: bridge

@@ -1,0 +1,186 @@
+version: '3'
+# Please do not use <tab> when edit 
+
+# For Kubernetes users: Kubernetes + Compose = Kompose -> http://kompose.io/
+# This configuration is nearly compliant with kubernetes, still some volume mount problems is remaining
+# feel free to try 'sudo ./kompose -f docker-compose.yml convert'
+
+services:
+
+# Example containers with source codes
+
+# nodejs demo app, based on nodejs express https://expressjs.com/ 
+# mounted to local disk ./nodejs_app
+
+  nodejs-docker-sample-webapp: 
+    container_name: nodehello
+    image: "node:latest"
+    tty: true # Enables debugging capabilities when attached to this container.
+    # user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./nodejs_app:/home/node/app
+    ports:
+      - "3000:3000" # node express default webpage localhost:3000
+    command: sh -c "npm start "
+# logging guide https://docs.docker.com/compose/compose-file/compose-file-v2/#logging  
+    logging:
+      driver: "json-file"
+    networks:
+      hackstack:
+        aliases: 
+         - nodehello
+ 
+# python demo app
+# mounted to local disk ./python-docker-sample-webapp/webapp 
+  python-docker-sample-webapp:
+    container_name: pythonhello
+    build:
+      context: python-docker-sample-webapp/    
+    working_dir: /opt/webapp
+    volumes:
+      - ./python-docker-sample-webapp/webapp:/opt/webapp
+    ports:
+    - "5555:5000" # <exposed port>:<internal docker port>
+    logging:
+      driver: "json-file"
+    networks:
+      hackstack:
+        aliases: 
+         - pythonhello
+
+# spring boot demo app
+  spring-boot-sample:    
+    container_name: springhello
+    build:
+      context: spring-boot-demo/
+    #image: garystafford/hello-world:latest
+    ports:
+      - "8099:8080/tcp" # optional
+    command: "java \
+      -Dspring.profiles.active=dev \
+      -Djava.security.egd=file:/dev/./urandom \
+      -jar hello/hello-world.jar"
+    logging:
+       driver: json-file
+    networks:
+      hackstack:
+        aliases: 
+         - springhello
+
+# go demo app
+  go-sample: 
+    container_name: gohello
+    build:
+      context: go-docker-demo/
+    ports:
+     - "8077:8080/tcp" # optional
+    logging:
+      driver: json-file
+    networks:
+      hackstack:
+        aliases: 
+         - gohello
+
+
+# ELK (Elasticseach,Logstash,Kipana) Stack fulfills a need in the log analytics space. 
+# https://logz.io/learn/complete-guide-elk-stack/
+# Syslog conf description: https://jujucharms.com/u/lazypower/logspout/
+  
+  elasticsearch: #ELK database
+    container_name: elasticsearch
+    build:
+      context: elasticsearch/
+      args:
+        ELK_VERSION: "6.4.2"   
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    healthcheck: # Healtcheck example, guide https://docs.docker.com/compose/compose-file/compose-file-v2/#healthcheck
+        test: ["CMD-SHELL", "curl --silent --fail localhost:9200/_cluster/health || exit 1"]
+        interval: 30s
+        timeout: 30s
+        retries: 3
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      hackstack:
+        aliases:  
+        - elasticsearch
+    logging:
+      driver: "json-file"
+
+# toolkit for managing logs to db, syslog as example
+
+  logstash: # ELK logging input
+    container_name: logstash
+    build:
+      context: logstash/
+      args:
+        ELK_VERSION: "6.4.2" # variable value define in .env file
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    command: sh -c "logstash -f /usr/share/logstash/pipeline/logstash.conf"
+    # plugins https://github.com/logstash-plugins
+    ports:
+      - "5000:5000"
+      - "9600:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xms3909m -Xmx3909m" #Logstash is configured with ~4GB Heap
+    networks:
+      hackstack:
+        aliases: 
+          - logstash
+    depends_on:
+      - elasticsearch
+    logging:
+      driver: "json-file"
+
+    #restart: on-failure:10 
+
+#logs collector, syslog as example
+
+  logspout:
+    container_name: logspout
+
+    image: gliderlabs/logspout
+    environment:
+      DEBUG: "true"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - logstash
+    command: syslog://logstash:5000   
+    networks:
+      hackstack:
+        aliases: 
+          - logspout
+    logging:
+      driver: "json-file"
+    # restart: on-failure:10 
+
+  kibana: # ELK dashboard
+    container_name: kibana
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: "6.4.2"
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
+    ports:
+      - "5601:5601"
+    networks:
+      hackstack:
+        aliases: 
+          - kibana
+    depends_on:
+      - elasticsearch
+    logging:
+      driver: "json-file"
+
+networks:
+  hackstack:
+    driver: bridge
