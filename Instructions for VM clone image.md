@@ -50,7 +50,7 @@ Attach VM image in Virtualbox
 **Check installation**
 
 - Open terminal and locate to the $HOME/hackstack folder.
-- Run command: sudo docker-compose -f docker-compose.portainer.yml up -d
+- Run command: sudo docker-compose -f docker-compose-portainer.yml up -d
 - Open Firefox browser: http://localhost:9000 admin:!hackhack
 
 Your setup should looks like follows:
