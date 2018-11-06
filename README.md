@@ -271,7 +271,7 @@ volumes: <host>:<container>.
 
 Logspout:
 
-1. logspout collects syslogs from all running containers and forward them to logstash 
+"logspout collects syslogs from all running containers and forward them to logstash" 
 
 Configured in docker-compose-elk.yml:
 
@@ -302,9 +302,10 @@ Elasticsearch:
 
 **EFK Hackathon setup**
 
-1. web server container forward http logging to fluentd 
+1. web server forwards http logging to fluentd 
 
 Configured in docker-compose-efk.yml:
 
+[httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/efk-httpd-source.png)
 
 ### Happy hackathon :-)
