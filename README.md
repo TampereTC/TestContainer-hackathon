@@ -294,9 +294,9 @@ Logtash is yet another collector in the chain. An input channel is configured to
 
 Elasticsearch:
 
-Elasticsearch rest API handling handling http messaging in port 9200 for inbound data 
+- Elasticsearch rest API handling handling http messaging in port 9200 for inbound data 
 
-Port 9200 is serving rest API for Kipana as well
+- Port 9200 is serving rest API for Kipana as well
 
 
 ### EFK example
@@ -318,6 +318,9 @@ Fluentd is working as kind of collector role and handling logging data towards e
 ![httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/fluentd-docker.png)
 
 
+Fluentd configuration file location on mounted host.
+
+`~/hackstack/fluentd/conf/fluent.conf`
 
 
 ### Happy hackathon :-)
