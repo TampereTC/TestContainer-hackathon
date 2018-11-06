@@ -58,10 +58,11 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 ## Test Frameworks:
 
 **Robot framework with Selenium:**
-- Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
+Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
+- Development [repository](https://github.com/playniuniu/docker-robot-framework/) in github.
 
 **TestCafe (Firefox edition):**
-- A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. 
+A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. 
 - [Instructions using TestCafe Docker Image](http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image). 
 - Development [repository](https://github.com/DevExpress/testcafe)
 - [TestCafe studio](https://testcafe-studio.devexpress.com/)
