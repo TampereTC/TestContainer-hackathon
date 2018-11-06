@@ -58,11 +58,13 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 ## Test Frameworks:
 
 **Robot framework with Selenium:**
+
 Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
 - Development [repository](https://github.com/playniuniu/docker-robot-framework/) in github.
 - RobotFramework [Web Demo](https://bitbucket.org/robotframework/webdemo)
 
 **TestCafe (Firefox edition):**
+
 A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. 
 - [Instructions using TestCafe Docker Image](http://devexpress.github.io/testcafe/documentation/using-testcafe/using-testcafe-docker-image). 
 - Development [repository](https://github.com/DevExpress/testcafe)
@@ -71,7 +73,7 @@ A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScri
 **Jenkins in docker:**
 - The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
 
-More instruction in [test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
+More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
 
 ## Instruction for hackathon content "hackstack":
 
@@ -94,7 +96,9 @@ $`unzip unhackstack.zip`
 
 ## Startup Containers
 
-New: Note that test frameworks removed from bundles. New versions maintained in github.
+New: Note that test frameworks removed from bundles. New versions maintained in github. 
+
+More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
 
 **Portainer dashboard:**
 - login to your home folder
