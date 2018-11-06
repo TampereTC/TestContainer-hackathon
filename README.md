@@ -267,13 +267,20 @@ volumes: <host>:<container>.
 
 ![ELK with logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
 
-** Hackathon setup **
+**ELK Hackathon setup**
+
+- logspout collects syslogs from all containers and forward them to logstash configured in docker-compose yml.
+
+`logspout:
+  ....
+  command: syslog://logstash:5000
+  ....`
 
 ### EFK example
 
 ![EFK](https://github.com/TampereTC/TestContainer-hackathon/blob/master/collect-distributed-application-logging-using-fluentd-efk-stack.jpg)
 
-** Hackathon setup **
+**EFK Hackathon setup**
 
 
 
