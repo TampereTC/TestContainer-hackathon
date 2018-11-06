@@ -271,29 +271,30 @@ volumes: <host>:<container>.
 
 Logspout:
 
-"logspout collects syslogs from all running containers and forward them to logstash" 
+logspout is working kind of collector role to gather syslogs from all running containers and forward them to logstash
 
-Configured in docker-compose-elk.yml:
+- Configured in docker-compose-elk.yml:
 
 ![logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/logspout-syslog.png)
 
 
 Logstash:
 
-2. logstash input is configured to listening port 5000 for tcp/udp with syslog profile. 
+Logtash is yet another collector in the chain. An input channel is configured to listening port 5000 for tcp/udp with syslog profile. 
 
-3. Messages are filtered before forwared them to elasticsearch database
+Messages are filtered before forwared them to elasticsearch database
 
-4. Output is configured to elasticsearch port 9200
+Output is configured to elasticsearch port 9200
 
-Configured in logstash.conf:
+- Configured in logstash.conf:
 
 `~/hackstack/logstash/pipeline/logstash.conf`
 
 Elasticsearch:
 
-5. Elasticsearch rest API handling handling http messaging in port 9200 for inbound data 
-6. Port 9200 is serving rest API for Kipana as well
+Elasticsearch rest API handling handling http messaging in port 9200 for inbound data 
+
+Port 9200 is serving rest API for Kipana as well
 
 
 ### EFK example
@@ -302,10 +303,19 @@ Elasticsearch:
 
 **EFK Hackathon setup**
 
-1. web server forwards http logging to fluentd 
+web server forwards http logging to fluentd 
 
-Configured in docker-compose-efk.yml:
+- Configured in docker-compose-efk.yml:
 
-[httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/efk-httpd-source.png)
+![httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/efk-httpd-source.png)
+
+Fluentd is working as kind of collector role and handling logging data towards elasticreach rest API
+
+- Ports and location of conf path are configured in docker-compose-efk.yml:
+
+![httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/fluentd-docker.png)
+
+
+
 
 ### Happy hackathon :-)
