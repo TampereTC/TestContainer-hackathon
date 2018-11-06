@@ -280,11 +280,7 @@ logspout is working kind of collector role to gather syslogs from all running co
 
 Logstash:
 
-Logtash is yet another collector in the chain. An input channel is configured to listening port 5000 for tcp/udp with syslog profile. 
-
-Messages are filtered before forwared them to elasticsearch database
-
-Output is configured to elasticsearch port 9200
+Logtash is yet another collector in the chain. An input channel is configured to listening port 5000 for tcp/udp with syslog profile. Messages are filtered before forwared them to elasticsearch database. Output is configured to elasticsearch port 9200
 
 - Configured in logstash.conf:
 
