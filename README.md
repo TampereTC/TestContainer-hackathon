@@ -88,7 +88,7 @@ Due to large size, the zip files has split to 6 parts.
 
 Windows: WinZip or 7-zip, Just douple-click hackstack.zip file to extract.
 
-Linux:
+Linux:https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#container-bundles
 
 $`zip -s 0 hackstack.zip --out unhackstack.zip`
 
@@ -99,6 +99,8 @@ $`unzip unhackstack.zip ~`
 New: Note that test frameworks removed from bundles. New versions maintained in github. 
 
 More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
+
+Content Description of docker-compose bundled in chapter [container-bundles](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#container-bundles)
 
 **Portainer dashboard:**
 
