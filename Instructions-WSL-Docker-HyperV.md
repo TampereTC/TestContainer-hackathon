@@ -80,13 +80,13 @@ $`sudo add-apt-repository
    $(lsb_release -cs) 
    ${DOCKER_CHANNEL}"`
 
-Allow your user to access the Docker CLI without needing root.
-
-$`sudo usermod -aG docker $USER`
-
 Install the latest version of Docker CE.
 
 $`sudo apt-get install -y docker-ce`
+
+Allow your user to access the Docker CLI without needing root.
+
+$`sudo usermod -aG docker $USER`
 
 Install Docker Compose.
 
