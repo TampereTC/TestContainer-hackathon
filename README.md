@@ -155,7 +155,7 @@ Also there are some conf files mounted to host folders. In order to changes into
 ## Good to know:
 - Note that each of the compose files contains instructions.
 - Some of the containers are mounted to your host. 
-volumes: <host>:<container>. ->  "./<path>" means your "hackstack" folder 
+volumes: <host>:<container>.
 - Reserve enough memory (4GB) and cpu cores (3-4) to your VM setup
   
 ## Container bundles
