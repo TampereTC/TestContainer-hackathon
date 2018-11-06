@@ -92,7 +92,7 @@ Linux:
 
 $`zip -s 0 hackstack.zip --out unhackstack.zip`
 
-$`unzip unhackstack.zip`
+$`unzip unhackstack.zip ~`
 
 ## Startup Containers
 
@@ -104,35 +104,48 @@ More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.co
 - login to your home folder
 - start up command:
 
-`cd hackstack`
+$`cd ~/hackstack`
 
-`sudo docker-compose -f docker-compose-portainer.yml up -d`
+$`sudo docker-compose -f docker-compose-portainer.yml up -d`
 
 - shutdown command:
 
-`sudo docker-compose -f docker-compose-portainer.yml down`
+$`cd ~/hackstack`
+
+$`sudo docker-compose -f docker-compose-portainer.yml down`
 
 **Demo applications bundle without logging features:**
+
+Latest version from github:
+
+$`cd ~/hackstack`
+
+$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose.yml`
+
 - login to your home folder
 - start up command:
 
-`cd hackstack`
+$`cd ~/hackstack`
 
-`sudo docker-compose up -d`
+$`sudo docker-compose up -d`
 
 - shutdown command:
 
-`sudo docker-compose down`
+$`cd ~/hackstack`
+
+$`sudo docker-compose down`
 
 **Demo applications bundle with EFK logging features:**
 - login to your home folder
 - start up command:
 
-`cd hackstack`
+$`cd ~/hackstack`
 
-`sudo docker-compose -f docker-compose-efk.yml up -d`
+$`sudo docker-compose -f docker-compose-efk.yml up -d`
 
 - shutdown command:
+
+$`cd ~/hackstack`
 
 `sudo docker-compose -f docker-compose-efk.yml down`
 
@@ -140,17 +153,19 @@ More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.co
 - login to your home folder
 - start up command:
 
-`cd hackstack`
+$`cd ~/hackstack`
 
-`sudo docker-compose -f docker-compose-elk.yml up -d`
+$`sudo docker-compose -f docker-compose-elk.yml up -d`
 
 - shutdown command:
 
-`sudo docker-compose -f docker-compose-elk.yml down`
+$`cd ~/hackstack`
+
+$`sudo docker-compose -f docker-compose-elk.yml down`
 
 ## Test Frameworks usage in hackathon setup
 
-
+$`cd ~/hackstack`
 
 ## Rebuild containers by compose:
 
@@ -158,7 +173,9 @@ In case you have made changes for local Dockerfile or itself content then rebuil
 (Changes in docker-compose yml file does not require rebuilding, only restart is needed)
 Also there are some conf files mounted to host folders. In order to changes into use only container restart is needed. 
 
-`sudo docker-compose -f <docker-compose file> build`
+$`cd ~/hackstack`
+
+$`sudo docker-compose -f <docker-compose file> build`
   
   
   
