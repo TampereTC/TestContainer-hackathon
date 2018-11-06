@@ -60,6 +60,7 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 **Robot framework with Selenium:**
 Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). This docker is used to do web automation test with Firefox, [Selenium](http://www.seleniumhq.org/) and [Robot Framework](http://robotframework.org/). It complete the [Robot Framework test demo](https://bitbucket.org/robotframework/webdemo) with docker
 - Development [repository](https://github.com/playniuniu/docker-robot-framework/) in github.
+- RobotFramework [Web Demo](https://bitbucket.org/robotframework/webdemo)
 
 **TestCafe (Firefox edition):**
 A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScript, run them and view results. 
@@ -105,7 +106,7 @@ $`unzip unhackstack.zip`
 
 `sudo docker-compose -f docker-compose-portainer.yml down`
 
-**Demo applications bundle with test frameworks without logging features:**
+**Demo applications bundle without logging features:**
 - login to your home folder
 - start up command:
 
@@ -117,7 +118,7 @@ $`unzip unhackstack.zip`
 
 `sudo docker-compose down`
 
-**Demo applications bundle with test frameworks with EFK logging features:**
+**Demo applications bundle with EFK logging features:**
 - login to your home folder
 - start up command:
 
@@ -129,7 +130,7 @@ $`unzip unhackstack.zip`
 
 `sudo docker-compose -f docker-compose-efk.yml down`
 
-**Demo applications bundle with test frameworks with ELK logging features:**
+**Demo applications bundle with ELK logging features:**
 - login to your home folder
 - start up command:
 
@@ -141,7 +142,11 @@ $`unzip unhackstack.zip`
 
 `sudo docker-compose -f docker-compose-elk.yml down`
 
-**Rebuild containers by compose:**
+## Test Frameworks usage in hackathon setup
+
+
+
+## Rebuild containers by compose:
 
 In case you have made changes for local Dockerfile or itself content then rebuild the bundle.
 (Changes in docker-compose yml file does not require rebuilding, only restart is needed)
