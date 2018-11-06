@@ -27,7 +27,7 @@ Virtualbox is one good option and reference VM clone image for Hackathon is base
 ## Demo apps:
 
 Example containers with open source codes: 
-- nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express](https://expressjs.com/) 
+- nodejs-docker-sample-webapp: nodejs web app demo, based on [nodejs express](https://expressjs.com/), [source code](https://github.com/bitnami/bitnami-docker-node/tree/master/example)
 - python-docker-sample-webapp: python web app demo
 - spring-boot-sample: spring boot web app demo
 - go-sample: go-lang web app demo   
