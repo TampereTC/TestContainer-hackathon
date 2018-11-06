@@ -295,7 +295,7 @@ Configured in logstash.conf:
 Elasticsearch:
 
 5. Elasticsearch rest API handling handling http messaging in port 9200 for inbound data 
-6. Port 9300 is serving rest API for Kipana 
+6. Port 9200 is serving rest API for Kipana as well
 
 
 ### EFK example
@@ -304,7 +304,9 @@ Elasticsearch:
 
 **EFK Hackathon setup**
 
-TBD
+1. web server container forward http logging to fluentd 
+
+Configured in docker-compose-efk.yml:
 
 
 ### Happy hackathon :-)
