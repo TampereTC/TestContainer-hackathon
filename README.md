@@ -101,14 +101,14 @@ New: Note that test frameworks removed from bundles. New versions maintained in 
 More instruction in [Test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
 
 **Portainer dashboard:**
-- login to your home folder
-- start up command:
+
+start up command:
 
 $`cd ~/hackstack`
 
 $`sudo docker-compose -f docker-compose-portainer.yml up -d`
 
-- shutdown command:
+shutdown command:
 
 $`cd ~/hackstack`
 
@@ -122,42 +122,53 @@ $`cd ~/hackstack`
 
 $`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose.yml`
 
-- login to your home folder
-- start up command:
+start up command:
 
 $`cd ~/hackstack`
 
 $`sudo docker-compose up -d`
 
-- shutdown command:
+shutdown command:
 
 $`cd ~/hackstack`
 
 $`sudo docker-compose down`
 
 **Demo applications bundle with EFK logging features:**
-- login to your home folder
-- start up command:
+
+Latest version from github:
+
+$`cd ~/hackstack`
+
+$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-efk.yml`
+
+start up command:
 
 $`cd ~/hackstack`
 
 $`sudo docker-compose -f docker-compose-efk.yml up -d`
 
-- shutdown command:
+shutdown command:
 
 $`cd ~/hackstack`
 
 `sudo docker-compose -f docker-compose-efk.yml down`
 
 **Demo applications bundle with ELK logging features:**
-- login to your home folder
-- start up command:
+
+Latest version from github:
+
+$`cd ~/hackstack`
+
+$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-elk.yml`
+
+start up command:
 
 $`cd ~/hackstack`
 
 $`sudo docker-compose -f docker-compose-elk.yml up -d`
 
-- shutdown command:
+shutdown command:
 
 $`cd ~/hackstack`
 
@@ -165,7 +176,24 @@ $`sudo docker-compose -f docker-compose-elk.yml down`
 
 ## Test Frameworks usage in hackathon setup
 
-$`cd ~/hackstack`
+**Robot framework demo**
+
+$`cd ~/hackstack/docker-robot-framework`
+$`sudo ./run_step_by_step.sh`
+
+Testcase location:
+
+- robot_target (host: ) `~/hackstack/docker-robot-framework/sample_vol/robot_target`
+
+- robot_testcases (host: ) `~/hackstack/docker-robot-framework/sample_vol/robot_target`
+
+Test setup configuration:
+
+`~/hackstack/docker-robot-framework/run_step_by_step.sh`
+
+
+**TestCafe demo**
+
 
 ## Rebuild containers by compose:
 
