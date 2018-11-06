@@ -202,9 +202,10 @@ $`sudo ./run_step_by_step.sh`
 
 Note that containers goes down after testing
 
-
+TBD: Test result output?? 
 
 **TestCafe demo**
+
 
 
 ## Rebuild containers by compose:
