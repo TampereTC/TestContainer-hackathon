@@ -263,7 +263,7 @@ $`sudo docker-compose -f <docker-compose file> build`
 
 - Each of the docker-compose yml files contains descriptions of containers and links to additional info sources.
 - Demo applications are desined so that source codes are available in hackstack folder. Dockerfile build the container.
-- Following diagram discribes how each of the container bundles are related to yaml bundles and how they are integrated.
+- Following diagram discribes how each of the container bundles are related to yaml files and how they are integrated.
 
 ![Container-bundle](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Container-bundle.png)
 
