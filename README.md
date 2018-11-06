@@ -184,9 +184,9 @@ $`sudo ./run_step_by_step.sh`
 
 Testcase location:
 
-- robot_target (host: ) `~/hackstack/docker-robot-framework/sample_vol/robot_target`
+- robot-framework-target: `~/hackstack/docker-robot-framework/sample_vol/robot_target`
 
-- robot_testcases (host: ) `~/hackstack/docker-robot-framework/sample_vol/robot_target`
+- robot-framework: `~/hackstack/docker-robot-framework/sample_vol/robot_target`
 
 Test setup configuration:
 
