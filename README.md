@@ -118,7 +118,7 @@ $`sudo docker-compose -f docker-compose-portainer.yml down`
 
 **Demo applications bundle without logging features:**
 
-Latest version from github:
+Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
@@ -138,7 +138,7 @@ $`sudo docker-compose down`
 
 **Demo applications bundle with EFK logging features:**
 
-Latest version from github:
+Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
@@ -158,7 +158,7 @@ $`cd ~/hackstack`
 
 **Demo applications bundle with ELK logging features:**
 
-Latest version from github:
+Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
@@ -204,11 +204,31 @@ $`sudo ./run_step_by_step.sh`
 
 Note that containers goes down after testing
 
-TBD: Test result output?? 
+Test results -> stdout
 
 **TestCafe demo**
 
+Latest docker-compose version from github:
 
+$`cd ~/hackstack`
+
+$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-testcafe.yml`
+
+Network name: `testcafe`
+
+Hostnames in docker dns: `testcafe`
+
+Test setup configuration:
+
+- rows in docker-compose-testcafe.yml
+
+`entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "firefox", "./tests/examples/basic/"]` 
+
+host location: 
+
+`~/hackstack/testcafe/examples/basic`
+
+Test results -> stdout
 
 ## Rebuild containers by compose:
 
@@ -220,7 +240,7 @@ $`cd ~/hackstack`
 
 $`sudo docker-compose -f <docker-compose file> build`
   
-  
+ 
   
 ## Kubernetes configuration:
 - It is doable to use convert docker-compose yml files to Kubernetes format by [Kompose tool:](http://kompose.io/) however configuring volume mounting seems to be a bit tricky and requires extra work to do. Roughly 70% of containers were succesfully converted to Kubernetes PODs yaml format.
