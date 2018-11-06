@@ -261,13 +261,20 @@ volumes: <host>:<container>.
 
 ![Container-bundle](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Container-bundle.png)
 
-## Logging structure
+## Logging structure and configuration files
 
-### ELK with logspout collector
+### ELK with logspout collector example
 
 ![ELK with logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
 
+** Hackathon setup **
 
-![EFK](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
+### EFK example
 
-**Happy hackathon :-)**
+![EFK](https://github.com/TampereTC/TestContainer-hackathon/blob/master/collect-distributed-application-logging-using-fluentd-efk-stack.jpg)
+
+** Hackathon setup **
+
+
+
+### Happy hackathon :-)
