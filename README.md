@@ -196,7 +196,7 @@ Test setup configuration:
 
 `~/hackstack/docker-robot-framework/run_step_by_step.sh`
 
-Start testing with Robot framework:
+***Start testing with Robot framework:***
 
 $`cd ~/hackstack/docker-robot-framework`
 
@@ -227,6 +227,12 @@ Test setup configuration:
 host location: 
 
 `~/hackstack/testcafe/examples/basic`
+
+***Start testing with TestCafe:***
+
+$`cd ~/hackstack`
+
+$`sudo docker-compose -f docker-compose-testcafe.yml up`
 
 Test results -> stdout
 
