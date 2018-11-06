@@ -274,7 +274,9 @@ Logspout:
 1. logspout collects syslogs from all running containers and forward them to logstash 
 
 Configured in docker-compose-elk.yml:
+
 ![logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/logspout-syslog.png)
+
 
 Logstash:
 
