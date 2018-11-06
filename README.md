@@ -255,8 +255,8 @@ $`sudo docker-compose -f <docker-compose file> build`
 
 ## Good to know:
 - Note that each of the compose files contains instructions.
-- Some of the containers are mounted to your host. 
-volumes: <host>:<container>.
+- Some of the containers are mounted to host 
+`volumes: <host>:<container>`
 - Reserve enough memory (4GB) and cpu cores (3-4) to your VM setup
   
 ## Container bundles
