@@ -71,7 +71,7 @@ A Node.js tool to automate end-to-end web testing. Write tests in JS or TypeScri
 **Jenkins in docker:**
 - The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 
 
-
+More instruction in [test-frameworks-usage-in-hackathon-setup](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#test-frameworks-usage-in-hackathon-setup) chapter.
 
 ## Instruction for hackathon content "hackstack":
 
