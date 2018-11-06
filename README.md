@@ -261,4 +261,13 @@ volumes: <host>:<container>.
 
 ![Container-bundle](https://github.com/TampereTC/TestContainer-hackathon/blob/master/Container-bundle.png)
 
+## Logging structure
+
+### ELK with logspout collector
+
+![ELK with logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
+
+
+![EFK](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
+
 **Happy hackathon :-)**
