@@ -70,6 +70,8 @@ FYI: [Fluentd vs. Logstash: A Comparison of Log Collectors](https://logz.io/blog
 
 ## Instruction for hackathon content "hackstack":
 
+**Download Hackathon material**
+
 - [clone](https://github.com/TampereTC/TestContainer-hackathon/archive/master.zip) this project as zip file and extract it or use git clone command
 - extract the 'hackstack*' files in $HOME folder
 
@@ -85,6 +87,7 @@ $`zip -s 0 hackstack.zip --out unhackstack.zip`
 
 $`unzip unhackstack.zip`
 
+## Startup Containers
 
 **Portainer dashboard:**
 - login to your home folder
