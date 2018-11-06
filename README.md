@@ -267,11 +267,13 @@ volumes: <host>:<container>.
 
 ![ELK with logspout](https://github.com/TampereTC/TestContainer-hackathon/blob/master/elk-log-message-flow.png)
 
-**ELK syslog colletor setup**
+**ELK syslog collector setup**
 
 Logspout:
 
-1. logspout collects syslogs from all running containers and forward them to logstash, configured in docker-compose yml.
+1. logspout collects syslogs from all running containers and forward them to logstash 
+
+Configured in docker-compose-elk.yml:
 
 `logspout:
   ....
@@ -286,7 +288,7 @@ Logstash:
 
 4. Output is configured to elasticsearch port 9200
 
-Configured in
+Configured in logstash.conf:
 
 `~/hackstack/logstash/pipeline/logstash.conf`
 
@@ -302,6 +304,7 @@ Elasticsearch:
 
 **EFK Hackathon setup**
 
+TBD
 
 
 ### Happy hackathon :-)
