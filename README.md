@@ -305,7 +305,7 @@ web server forwards http logging to fluentd
 
 ![httpd logs](https://github.com/TampereTC/TestContainer-hackathon/blob/master/efk-httpd-source.png)
 
-Fluentd is working as kind of collector role and handling logging data towards elasticreach rest API
+Fluentd is working as kind of collector role and handling logging data towards elasticsearch rest API
 
 - Ports and location of conf path are configured in docker-compose-efk.yml:
 
