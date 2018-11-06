@@ -94,6 +94,8 @@ $`unzip unhackstack.zip`
 
 ## Startup Containers
 
+New: Note that test frameworks removed from bundles. New versions maintained in github.
+
 **Portainer dashboard:**
 - login to your home folder
 - start up command:
