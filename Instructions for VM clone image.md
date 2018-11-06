@@ -44,7 +44,7 @@ Attach VM image in Virtualbox
 **Start "hackstack" VM in Virtualbox**
 
 - Click start button
-- No password required. However sudo requires it. Ref: \hackathon\VM\VM clone guide
+- No password required. However sudo requires it. -> \hackathon\VM\VM clone guide
 
 
 **Check installation**
@@ -53,7 +53,8 @@ Attach VM image in Virtualbox
 - Run command: sudo docker-compose -f docker-compose-portainer.yml up -d
 - Open Firefox browser: http://localhost:9000 admin:!hackhack
 
-Your setup should looks like follows:
+Your setup should looks like follows: 
+VM package is ready to follow hackathon instructions to [startup containers.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#startup-containers) 
 
 ![Screenshot](https://github.com/TampereTC/TestContainer-hackathon/blob/master/VM/Screenshot%20hackstack%20dashboard.png)
 
