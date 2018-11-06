@@ -177,10 +177,12 @@ $`sudo docker-compose -f docker-compose-elk.yml down`
 ## Test Frameworks usage in hackathon setup
 
 **Robot framework demo**
+ 
+Network name: `robot`
 
-$`cd ~/hackstack/docker-robot-framework`
-
-$`sudo ./run_step_by_step.sh`
+Hostnames in docker dns: 
+- Web client test target: `robot-framework-target`
+- Robot server: `robot-framework`
 
 Testcase location:
 
@@ -191,6 +193,15 @@ Testcase location:
 Test setup configuration:
 
 `~/hackstack/docker-robot-framework/run_step_by_step.sh`
+
+Start testing with Robot framework:
+
+$`cd ~/hackstack/docker-robot-framework`
+
+$`sudo ./run_step_by_step.sh`
+
+Note that containers goes down after testing
+
 
 
 **TestCafe demo**
