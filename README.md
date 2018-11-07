@@ -122,7 +122,7 @@ Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
-$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose.yml`
+$`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/docker-compose.yml`
 
 start up command:
 
@@ -142,7 +142,7 @@ Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
-$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-efk.yml`
+$`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/docker-compose-efk.yml`
 
 start up command:
 
@@ -162,7 +162,7 @@ Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
-$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-elk.yml`
+$`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/docker-compose-elk.yml`
 
 start up command:
 
@@ -212,7 +212,7 @@ Latest docker-compose version from github:
 
 $`cd ~/hackstack`
 
-$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/docker-compose-testcafe.yml`
+$`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/docker-compose-testcafe.yml`
 
 Network name: `testcafe`
 
@@ -330,7 +330,7 @@ This example combines FLuentd http logging and RF target server logging while te
 
 $`cd ~/hackstack`
 
-$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/run-rftest-fluentd-logging.sh`
+$`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/run-rftest-fluentd-logging.sh`
 
 Start EFK stack, please shutdown other running docker stacks beforehand excluding Portainer
 
