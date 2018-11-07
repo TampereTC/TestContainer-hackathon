@@ -102,15 +102,23 @@ If you want to get cute, you could do all of that with this 1 liner:
 
 $`echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
 
-Check that all looks ok
+Change WSL mount point by adding a wsl.conf file under /etc
+
+[automount]
+root = /
+options = "metadata"
+
+Close WSL shell and Logout from Win10 to get changes effective
+
+Login back to Win10, open WSL shell and check that all looks ok
 
 $`docker info`
 
-check the WSL mount to host system
-Your windows home is typically mounted under c or d drive. /mnt/c/Users/<user>
-Extract your hackathon material here /mnt/c/Users/<user>/hackstack
+Check the WSL mount to host system, it should be now under /c (if you shared C drive)
 
-$`cd /mnt/c/Users/<user>/hackstack`
+Extract your hackathon material here /c/Users/<user>/hackstack
+
+$`cd /c/Users/<user>/hackstack`
 
 Win10 WSL Subsystem is ready to follow hackathon instructions to [startup containers.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#startup-containers) 
 
