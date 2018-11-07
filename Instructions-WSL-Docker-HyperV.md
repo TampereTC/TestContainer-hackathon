@@ -104,9 +104,11 @@ $`echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashr
 
 Change WSL mount point by adding a wsl.conf file under /etc
 
-[automount]
+`[automount]
+
 root = /
-options = "metadata"
+
+options = "metadata"`
 
 Close WSL shell and Logout from Win10 to get changes effective
 
