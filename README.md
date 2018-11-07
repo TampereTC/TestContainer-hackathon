@@ -323,4 +323,22 @@ Fluentd configuration file location on mounted host.
 `~/hackstack/fluentd/conf/fluent.conf`
 
 
+### Example Robot testing, http logging to fluentd
+
+This example combines FLuentd http logging and RF target server logging while testing
+
+
+$`cd ~/hackstack`
+
+$`wget https://github.com/TampereTC/TestContainer-hackathon/blob/master/run-rftest-fluentd-logging.sh`
+
+Start EFK stack, please shutdown other running docker stacks beforehand excluding Portainer
+
+$`sudo docker-compose -f docker-compose-efk.yml up -d`
+
+Run testing
+
+$`sudo ./run-rftest-fluentd-logging.sh`
+
+
 ### Happy hackathon :-)
