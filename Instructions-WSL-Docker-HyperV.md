@@ -122,9 +122,9 @@ Extract your hackathon material here
 
 $`cd /mnt/c/Users/<user>/hackstack`
 
-Create symbolic link for hackstack prohect folder from your host $HOME and WSL $HOME 
+Create symbolic link for 'hackstack' project folder from your host $HOME and WSL $HOME. Please replace <user> accordingly to your setup.
 
-$`ln -s /mnt/c/Users/jraivio/hackstack $HOME`
+$`ln -s /mnt/c/Users/<user>/hackstack $HOME`
 
 Win10 WSL Subsystem is ready to follow hackathon instructions to [startup containers.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#startup-containers) 
 
