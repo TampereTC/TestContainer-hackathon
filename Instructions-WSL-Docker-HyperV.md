@@ -126,6 +126,11 @@ Create symbolic link for 'hackstack' project folder from your host $HOME and WSL
 
 $`ln -s /mnt/c/Users/<user>/hackstack $HOME`
 
+Install xhost
+
+$`sudo apt install x11-xserver-utils$`
+
+
 Win10 WSL Subsystem is ready to follow hackathon instructions to [startup containers.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#startup-containers) 
 
 
