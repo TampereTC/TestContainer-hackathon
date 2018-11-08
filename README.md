@@ -350,4 +350,8 @@ Run testing
 $`sudo ./run-rftest-fluentd-logging.sh`
 
 
+Test results outputdir: ~/vol/robot/results
+
+
+
 ### Happy hackathon :-)
