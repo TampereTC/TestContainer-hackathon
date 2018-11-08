@@ -208,10 +208,11 @@ $`cd ~/hackstack/docker-robot-framework`
 
 $`sudo ./run_step_by_step.sh`
 
-Note that containers goes down after testing
+- Web UI is poping up while testing.
 
-Test results on host side: Not presented to Github community example.
+- Note that both containers goes down after testing.
 
+Test results on host side: Not presented in case of refered Github community example. However test result outputdir as an example is  presented in chapter [Example-robot-testing-http-logging-to-fluentd](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#example-robot-testing-http-logging-to-fluentd).
 
 **TestCafe demo**
 
@@ -338,6 +339,7 @@ This example combines FLuentd http logging and RF target server logging while te
 $`cd ~/hackstack`
 
 $`wget https://raw.githubusercontent.com/TampereTC/TestContainer-hackathon/master/run-rftest-fluentd-logging.sh`
+
 
 Start EFK stack, please shutdown other running docker stacks beforehand excluding Portainer
 
