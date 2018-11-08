@@ -116,13 +116,20 @@ Login back to Win10, open WSL shell and check that all looks ok
 
 $`docker info`
 
-Check the WSL mount to host system, it should be now under /c (if you shared C drive)
+Check the WSL mount to host system, it should be now under `/mnt/c` (if you shared C drive)
 
-Extract your hackathon material here /c/Users/<user>/hackstack
+Extract your hackathon material here 
 
-$`cd /c/Users/<user>/hackstack`
+$`cd /mnt/c/Users/<user>/hackstack`
+
+Create symbolic link for hackstack prohect folder from your host $HOME and WSL $HOME 
+
+$`ln -s /mnt/c/Users/jraivio/hackstack $HOME`
 
 Win10 WSL Subsystem is ready to follow hackathon instructions to [startup containers.](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#startup-containers) 
 
-Note that 'sudo' is not working with WSL docker commands. 
+
+* Note that 'sudo' is not working with WSL docker commands. *
+
+
 
