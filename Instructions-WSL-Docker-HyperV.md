@@ -118,7 +118,7 @@ $`docker info`
 
 Check the WSL mount to host system, it should be now under `/mnt/c` (if you shared C drive)
 
-Extract your hackathon material here 
+Download your hackathon material here. As described in chapter [Instruction-for-hackathon-content-hackstack](https://github.com/TampereTC/TestContainer-hackathon#instruction-for-hackathon-content-hackstack).
 
 $`cd /mnt/c/Users/<user>/hackstack`
 
