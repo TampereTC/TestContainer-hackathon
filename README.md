@@ -192,6 +192,12 @@ Testcase location:
 
 - robot-framework: `~/hackstack/docker-robot-framework/sample_vol/robot_target`
 
+Rest result location:
+
+Configuration parameter flag
+
+`ROBOT_OPTIONS="--outputdir <dir> -s valid_login " `
+
 Test setup configuration:
 
 `~/hackstack/docker-robot-framework/run_step_by_step.sh`
@@ -204,7 +210,8 @@ $`sudo ./run_step_by_step.sh`
 
 Note that containers goes down after testing
 
-Test results -> stdout
+Test results on host side: Not presented to Github community example.
+
 
 **TestCafe demo**
 
