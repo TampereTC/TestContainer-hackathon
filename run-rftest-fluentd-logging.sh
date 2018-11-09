@@ -1,11 +1,16 @@
 #!/bin/sh
 echo "--------------------"
-echo "--- New folder ----"
+echo "--- New folder -----"
 echo "-- ~/vol/robot/ ----"
+echo "-~/vol/robot-results"
 echo "--------------------"
 
 if [ ! -d ~/vol/robot/ ]; then
     mkdir -p ~/vol/robot/ 
+fi
+
+if [ ! -d ~/vol/robot-results/ ]; then
+    mkdir -p ~/vol/robot-results 
 fi
 
 echo "--------------------"
@@ -52,6 +57,7 @@ docker run --rm -t \
            -e DISPLAY=unix$DISPLAY \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v ~/vol/robot/robot_testcases:/testcases \
+           -v ~/vol/robot-results:/results \
            --name robot-framework \
            playniuniu/robot-framework
 
