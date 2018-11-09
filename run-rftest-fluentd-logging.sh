@@ -55,6 +55,7 @@ echo "-------------------------"
 docker run --rm -t \
            --net hackstack-robot \
            -e DISPLAY=unix$DISPLAY \
+           -e ROBOT_OPTIONS="--outputdir /results -s valid_login"\
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v ~/vol/robot/robot_testcases:/testcases \
            -v ~/vol/robot-results:/results \
