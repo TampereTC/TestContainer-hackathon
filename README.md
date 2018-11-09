@@ -212,7 +212,7 @@ $`sudo ./run_step_by_step.sh`
 
 - Note that both containers goes down after testing.
 
-Test results on host side: Not presented in case of refered Github community example. However test result outputdir as an example is  presented in chapter [Example-robot-testing-http-logging-to-fluentd](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#example-robot-testing-http-logging-to-fluentd).
+Test results on host side: This option is not presented in above mentioned example by Github community. However test result outputdir as an example is presented in chapter [Example-robot-testing-http-logging-to-fluentd](https://github.com/TampereTC/TestContainer-hackathon/blob/master/README.md#example-robot-testing-http-logging-to-fluentd).
 
 **TestCafe demo**
 
