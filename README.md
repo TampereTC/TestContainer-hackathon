@@ -350,7 +350,7 @@ Run testing
 $`sudo ./run-rftest-fluentd-logging.sh`
 
 
-Test results outputdir: ~/vol/robot/results
+Test results outputdir: `~/vol/robot-results`
 
 
 
